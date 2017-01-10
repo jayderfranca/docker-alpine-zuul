@@ -4,9 +4,9 @@ RUN cd /usr/local/tomcat/webapps &&\
     rm -Rf ROOT docs examples host-manager manager &&\
     mkdir ROOT &&\
     cd ROOT &&\
-    wget -q http://repo1.maven.org/maven2/com/netflix/zuul/zuul-netflix-webapp/1.1.0/zuul-netflix-webapp-1.1.0.war &&\
-    unzip -o zuul-netflix-webapp-1.1.0.war &&\
-    rm zuul-netflix-webapp-1.1.0.war
+    wget -q http://repo1.maven.org/maven2/com/netflix/zuul/zuul-netflix-webapp/1.2.0/zuul-netflix-webapp-1.2.0.war &&\
+    unzip -o zuul-netflix-webapp-1.2.0.war &&\
+    rm zuul-netflix-webapp-1.2.0.war
 
 ADD config.properties /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.properties
 ADD zuul-test.properties /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/zuul-test.properties
